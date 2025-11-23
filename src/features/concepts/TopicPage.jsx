@@ -39,12 +39,43 @@ export default function TopicPage() {
                     </div>
                 </div>
 
-                {/* Explanation - Clean & Breathable */}
-                <div className="prose prose-invert prose-lg max-w-none">
-                    <p className="text-slate-300 leading-relaxed">
-                        {tagData.explanation || "No detailed explanation available yet."}
+                {/* Explanation */}
+                <div className="prose prose-invert max-w-none mb-12">
+                    <p className="text-lg text-slate-300 leading-relaxed whitespace-pre-line">
+                        {tagData.explanation}
                     </p>
                 </div>
+
+                {/* In The Wild (Real World Example) */}
+                {tagData.realWorld && (
+                    <div className="mb-12">
+                        <h2 className="text-xl font-display font-bold text-white mb-4 flex items-center gap-2">
+                            <span className="text-primary">✦</span> In The Wild
+                        </h2>
+                        <div className="bg-surface border border-white/10 rounded-xl p-6 relative overflow-hidden group">
+                            <div className={`absolute inset-0 opacity-10 bg-gradient-to-br ${tagData.realWorld.color || 'from-primary to-purple-600'}`} />
+
+                            <div className="relative z-10 flex flex-col md:flex-row gap-6 items-center">
+                                <div className="flex-1">
+                                    <div className="text-xs font-bold text-primary uppercase tracking-wider mb-1">
+                                        Seen in: {tagData.realWorld.app}
+                                    </div>
+                                    <h3 className="text-2xl font-bold text-white mb-2">
+                                        {tagData.realWorld.feature}
+                                    </h3>
+                                    <p className="text-slate-300">
+                                        {tagData.realWorld.description}
+                                    </p>
+                                </div>
+
+                                {/* Visual Decoration */}
+                                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex items-center justify-center text-3xl">
+                                    📱
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
 
                 {/* Interactive Visualizer (if exists) */}
                 {Visualizer && (

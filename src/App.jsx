@@ -9,6 +9,7 @@ import Home from './features/home/Home';
 import ConceptsGrid from './features/concepts/ConceptsGrid';
 import TopicPage from './features/concepts/TopicPage';
 import About from './features/about/About';
+import CheatSheet from './components/tools/CheatSheet';
 
 function App() {
   return (
