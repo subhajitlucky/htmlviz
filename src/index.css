@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ccff00;
+  --color-secondary: #ffffff;
+  --color-dark: #050505;
+  --color-surface: #0a0a0a;
+  --color-border: #1a1a1a;
+  --font-sans: 'Manrope', sans-serif;
+  --font-display: 'Unbounded', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-dark text-slate-300 antialiased font-sans;
+  background-image: 
+    linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Typography Utilities */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display text-white tracking-tight;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-700;
+}
+
+/* Selection */
+::selection {
+  @apply bg-primary text-dark;
+}
