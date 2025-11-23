@@ -90,6 +90,96 @@ export const problems = [
         initialCode: "",
         validation: { type: "includes", value: ["<button>", "Submit", "</button>"] }
     },
+    {
+        id: 21,
+        title: "Italic Text",
+        difficulty: "Easy",
+        category: "Text",
+        description: "Make the word 'Fancy' italic using the i tag.",
+        initialCode: "<p>This is Fancy text.</p>",
+        validation: { type: "includes", value: ["<i>Fancy</i>"] }
+    },
+    {
+        id: 22,
+        title: "Underlined Text",
+        difficulty: "Easy",
+        category: "Text",
+        description: "Underline the word 'Underlined' using the u tag.",
+        initialCode: "<p>This is Underlined text.</p>",
+        validation: { type: "includes", value: ["<u>Underlined</u>"] }
+    },
+    {
+        id: 23,
+        title: "Small Text",
+        difficulty: "Easy",
+        category: "Text",
+        description: "Make the copyright text small using the small tag.",
+        initialCode: "<p>Copyright 2023</p>",
+        validation: { type: "includes", value: ["<small>Copyright 2023</small>"] }
+    },
+    {
+        id: 24,
+        title: "Ordered List",
+        difficulty: "Easy",
+        category: "Lists",
+        description: "Create an ordered list (ol) with two items: 'First', 'Second'.",
+        initialCode: "",
+        validation: { type: "includes", value: ["<ol>", "<li>First</li>", "<li>Second</li>", "</ol>"] }
+    },
+    {
+        id: 25,
+        title: "Password Input",
+        difficulty: "Easy",
+        category: "Forms",
+        description: "Create a password input field.",
+        initialCode: "",
+        validation: { type: "regex", value: /<input\s+type=["']password["']\s*\/?>/ }
+    },
+    {
+        id: 26,
+        title: "Radio Button",
+        difficulty: "Easy",
+        category: "Forms",
+        description: "Create a radio button with name 'gender' and value 'male'.",
+        initialCode: "",
+        validation: { type: "regex", value: /<input\s+type=["']radio["']\s+name=["']gender["']\s+value=["']male["']\s*\/?>/ }
+    },
+    {
+        id: 27,
+        title: "Main Content",
+        difficulty: "Easy",
+        category: "Structure",
+        description: "Wrap the content in a main tag.",
+        initialCode: "<h1>Welcome</h1><p>Content</p>",
+        validation: { type: "includes", value: ["<main>", "<h1>Welcome</h1>", "<p>Content</p>", "</main>"] }
+    },
+    {
+        id: 28,
+        title: "Article Tag",
+        difficulty: "Easy",
+        category: "Structure",
+        description: "Create an article tag with a heading 'News'.",
+        initialCode: "",
+        validation: { type: "includes", value: ["<article>", "<h2>News</h2>", "</article>"] }
+    },
+    {
+        id: 29,
+        title: "Section Tag",
+        difficulty: "Easy",
+        category: "Structure",
+        description: "Create a section tag.",
+        initialCode: "",
+        validation: { type: "includes", value: ["<section>", "</section>"] }
+    },
+    {
+        id: 30,
+        title: "Audio Player",
+        difficulty: "Easy",
+        category: "Media",
+        description: "Create an audio tag with controls.",
+        initialCode: "",
+        validation: { type: "includes", value: ["<audio controls>", "</audio>"] }
+    },
 
     // MEDIUM PROBLEMS
     {
@@ -137,6 +227,96 @@ export const problems = [
         initialCode: "",
         validation: { type: "regex", value: /<input\s+type=["']checkbox["']\s+id=["']agree["']\s*\/?>\s*<label\s+for=["']agree["']\s*>I agree<\/label>/ }
     },
+    {
+        id: 31,
+        title: "Table Row",
+        difficulty: "Medium",
+        category: "Tables",
+        description: "Create a table row (tr) with two data cells (td) containing 'A' and 'B'.",
+        initialCode: "",
+        validation: { type: "includes", value: ["<tr>", "<td>A</td>", "<td>B</td>", "</tr>"] }
+    },
+    {
+        id: 32,
+        title: "Textarea",
+        difficulty: "Medium",
+        category: "Forms",
+        description: "Create a textarea with 4 rows and 50 columns.",
+        initialCode: "",
+        validation: { type: "regex", value: /<textarea\s+rows=["']4["']\s+cols=["']50["']\s*><\/textarea>/ }
+    },
+    {
+        id: 33,
+        title: "Labelled Input",
+        difficulty: "Medium",
+        category: "Forms",
+        description: "Create a label for 'email' and an input with id 'email'.",
+        initialCode: "",
+        validation: { type: "regex", value: /<label\s+for=["']email["']\s*>.*<\/label>\s*<input\s+id=["']email["']\s*\/?>/ }
+    },
+    {
+        id: 34,
+        title: "New Tab Link",
+        difficulty: "Medium",
+        category: "Links",
+        description: "Create a link to 'https://example.com' that opens in a new tab.",
+        initialCode: "",
+        validation: { type: "regex", value: /<a\s+href=["']https:\/\/example\.com["']\s+target=["']_blank["']\s*>/ }
+    },
+    {
+        id: 35,
+        title: "Mailto Link",
+        difficulty: "Medium",
+        category: "Links",
+        description: "Create a link to send an email to 'info@example.com'.",
+        initialCode: "",
+        validation: { type: "regex", value: /<a\s+href=["']mailto:info@example\.com["']\s*>/ }
+    },
+    {
+        id: 36,
+        title: "Picture Tag",
+        difficulty: "Medium",
+        category: "Media",
+        description: "Create a picture tag with an img tag inside.",
+        initialCode: "",
+        validation: { type: "includes", value: ["<picture>", "<img", "</picture>"] }
+    },
+    {
+        id: 37,
+        title: "Details Widget",
+        difficulty: "Medium",
+        category: "Interactive",
+        description: "Create a details tag with a summary 'More Info'.",
+        initialCode: "",
+        validation: { type: "includes", value: ["<details>", "<summary>More Info</summary>", "</details>"] }
+    },
+    {
+        id: 38,
+        title: "Aside Content",
+        difficulty: "Medium",
+        category: "Structure",
+        description: "Create an aside tag with a paragraph 'Sidebar'.",
+        initialCode: "",
+        validation: { type: "includes", value: ["<aside>", "<p>Sidebar</p>", "</aside>"] }
+    },
+    {
+        id: 39,
+        title: "Navigation",
+        difficulty: "Medium",
+        category: "Structure",
+        description: "Create a nav tag with a link 'Home'.",
+        initialCode: "",
+        validation: { type: "includes", value: ["<nav>", "<a", "Home", "</a>", "</nav>"] }
+    },
+    {
+        id: 40,
+        title: "Definition List",
+        difficulty: "Medium",
+        category: "Lists",
+        description: "Create a definition list (dl) with one term (dt) and description (dd).",
+        initialCode: "",
+        validation: { type: "includes", value: ["<dl>", "<dt>", "<dd>", "</dl>"] }
+    },
 
     // HARD PROBLEMS
     {
@@ -183,5 +363,95 @@ export const problems = [
         description: "Add a meta tag for viewport settings to make the page responsive.",
         initialCode: "<head>\n</head>",
         validation: { type: "regex", value: /<meta\s+name=["']viewport["']\s+content=["']width=device-width,\s*initial-scale=1\.0["']\s*\/?>/ }
+    },
+    {
+        id: 41,
+        title: "Datalist",
+        difficulty: "Hard",
+        category: "Forms",
+        description: "Create an input linked to a datalist with id 'browsers'.",
+        initialCode: "",
+        validation: { type: "regex", value: /<input\s+list=["']browsers["']\s*\/?>\s*<datalist\s+id=["']browsers["']\s*>/ }
+    },
+    {
+        id: 42,
+        title: "Optgroup",
+        difficulty: "Hard",
+        category: "Forms",
+        description: "Create a select with an optgroup labeled 'Cars'.",
+        initialCode: "",
+        validation: { type: "includes", value: ["<select>", "<optgroup label=\"Cars\">", "</optgroup>", "</select>"] }
+    },
+    {
+        id: 43,
+        title: "Fieldset Legend",
+        difficulty: "Hard",
+        category: "Forms",
+        description: "Group form data with a fieldset and a legend 'Personal Info'.",
+        initialCode: "",
+        validation: { type: "includes", value: ["<fieldset>", "<legend>Personal Info</legend>", "</fieldset>"] }
+    },
+    {
+        id: 44,
+        title: "Table Structure",
+        difficulty: "Hard",
+        category: "Tables",
+        description: "Create a table with thead, tbody, and tfoot.",
+        initialCode: "",
+        validation: { type: "includes", value: ["<table>", "<thead>", "<tbody>", "<tfoot>", "</table>"] }
+    },
+    {
+        id: 45,
+        title: "Table Caption",
+        difficulty: "Hard",
+        category: "Tables",
+        description: "Add a caption 'Monthly Savings' to a table.",
+        initialCode: "<table></table>",
+        validation: { type: "includes", value: ["<table>", "<caption>Monthly Savings</caption>", "</table>"] }
+    },
+    {
+        id: 46,
+        title: "Charset Meta",
+        difficulty: "Hard",
+        category: "Meta",
+        description: "Define the character set as UTF-8.",
+        initialCode: "<head></head>",
+        validation: { type: "regex", value: /<meta\s+charset=["']UTF-8["']\s*\/?>/ }
+    },
+    {
+        id: 47,
+        title: "Description Meta",
+        difficulty: "Hard",
+        category: "Meta",
+        description: "Add a meta description 'Free Web Tutorials'.",
+        initialCode: "<head></head>",
+        validation: { type: "regex", value: /<meta\s+name=["']description["']\s+content=["']Free Web Tutorials["']\s*\/?>/ }
+    },
+    {
+        id: 48,
+        title: "Dialog Modal",
+        difficulty: "Hard",
+        category: "Interactive",
+        description: "Create an open dialog tag with text 'Hello'.",
+        initialCode: "",
+        validation: { type: "includes", value: ["<dialog open>", "Hello", "</dialog>"] }
+    },
+    {
+        id: 49,
+        title: "Class Attribute",
+        difficulty: "Hard",
+        category: "Global",
+        description: "Create a p tag with class 'intro'.",
+        initialCode: "",
+        validation: { type: "regex", value: /<p\s+class=["']intro["']\s*>/ }
+    },
+    {
+        id: 50,
+        title: "ID Attribute",
+        difficulty: "Hard",
+        category: "Global",
+        description: "Create a h1 tag with id 'main-title'.",
+        initialCode: "",
+        validation: { type: "regex", value: /<h1\s+id=["']main-title["']\s*>/ }
     }
 ];
