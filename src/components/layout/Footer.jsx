@@ -19,11 +19,8 @@ export default function Footer() {
                 </div>
 
                 <div className="flex items-center gap-4">
-                    <a href="#" className="text-slate-500 hover:text-primary transition-colors">
+                    <a href="https://github.com/subhajitlucky/htmlviz" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-primary transition-colors">
                         <Github size={20} />
-                    </a>
-                    <a href="#" className="text-slate-500 hover:text-primary transition-colors">
-                        <Twitter size={20} />
                     </a>
                 </div>
             </div>

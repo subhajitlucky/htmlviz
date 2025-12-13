@@ -1,16 +1,62 @@
-# React + Vite
+# HTMLViz: Interactive HTML Learning Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+HTMLViz is a modern, interactive platform designed to help users master HTML through visualization, real-time compilation, and gamified challenges. Unlike traditional text-based tutorials, HTMLViz provides a 3D-style visualizer for core concepts like the Box Model and Flexbox, allowing learners to *see* how the code behaves.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🌟 Visual Intuition
+Stop memorizing tags. Understand the **structure** of the web.
+- **Interactive Visualizers**: Explore the Box Model, Flexbox, and Grid systems with dynamic, interactive components.
+- **Mental Models**: Learn the "why" behind the code with curated mental models.
 
-## React Compiler
+### 🚀 Live Compiler
+Write code and see the results instantly.
+- **Monaco Editor Support**: Professional coding environment with syntax highlighting and auto-completion.
+- **Real-time Preview**: Instant rendering of your HTML/CSS code.
+- **Error Feedback**: Immediate feedback to help you debug and learn.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🎮 Gamified Mastery
+Level up your skills from novice to architect.
+- **20+ Curated Challenges**: Solve problems ranging from basic tags to complex layouts.
+- **Automated Validation**: Get instant checks on your solutions.
+- **Progress Tracking**: Track your journey through different difficulty levels.
 
-## Expanding the ESLint configuration
+### 🌓 Day & Cosmic Themes
+A beautiful, accessible UI for any time of day.
+- **Cosmic Dark Mode**: A neon-accented, immersive dark theme for late-night coding sessions.
+- **Clean Light Mode**: A professional, high-contrast light theme for bright environments.
+- **Seamless Switching**: Instant toggle with persisted user preference.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **Frontend**: React, Vite, TailwindCSS
+- **State Management**: React Hooks & Context
+- **Editor**: Monaco Editor (`@monaco-editor/react`)
+- **Icons**: Lucide React
+- **Animations**: Framer Motion
+
+## Getting Started
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/subhajitlucky/htmlviz.git
+    cd htmlviz
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+## Contributing
+
+Contributions are welcome! Whether it's adding new challenges, improving visualizations, or fixing bugs, please feel free to fork the repo and submit a PR.
+
+## License
+
+MIT License. Open Source Learning.
