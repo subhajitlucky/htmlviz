@@ -50,8 +50,8 @@ export default function ProblemSolver() {
     };
 
     return (
-        <div className="h-[calc(100vh-6rem)] flex flex-col gap-4">
-            <div className="flex items-center justify-between">
+        <div className="min-h-[calc(100vh-6rem)] flex flex-col gap-4">
+            <div className="flex items-center justify-between gap-4 flex-wrap">
                 <div className="flex items-center gap-4">
                     <button
                         onClick={() => navigate('/problems')}
@@ -71,16 +71,16 @@ export default function ProblemSolver() {
 
                 <button
                     onClick={checkSolution}
-                    className="flex items-center gap-2 px-6 py-2 rounded-lg bg-green-600 text-white hover:bg-green-500 transition-colors font-bold shadow-lg shadow-green-900/20"
+                    className="flex items-center gap-2 px-6 py-2 rounded-lg bg-green-600 text-white hover:bg-green-500 transition-colors font-bold shadow-lg shadow-green-900/20 w-full sm:w-auto justify-center"
                 >
                     <Play size={18} fill="currentColor" />
                     Submit Answer
                 </button>
             </div>
 
-            <div className="flex-1 grid grid-cols-12 gap-6 min-h-0">
+            <div className="flex-1 grid grid-cols-1 md:grid-cols-12 gap-6 min-h-0 auto-rows-[minmax(260px,1fr)]">
                 {/* Description Panel */}
-                <div className="col-span-3 bg-slate-900/50 border border-slate-800 rounded-xl p-6 overflow-y-auto">
+                <div className="col-span-12 md:col-span-3 bg-slate-900/50 border border-slate-800 rounded-xl p-6 overflow-y-auto min-h-[260px] md:min-h-0">
                     <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-4">Description</h3>
                     <p className="text-slate-300 leading-relaxed mb-6">
                         {problem.description}
@@ -98,9 +98,13 @@ export default function ProblemSolver() {
                 </div>
 
                 {/* Editor & Preview */}
-                <div className="col-span-9 grid grid-cols-2 gap-6">
-                    <CodeEditor code={code} onChange={setCode} />
-                    <LivePreview code={code} />
+                <div className="col-span-12 md:col-span-9 grid grid-cols-1 md:grid-cols-2 gap-6 min-h-0 auto-rows-[minmax(300px,1fr)]">
+                    <div className="min-h-[300px] md:min-h-0 md:h-full">
+                        <CodeEditor code={code} onChange={setCode} />
+                    </div>
+                    <div className="min-h-[300px] md:min-h-0 md:h-full">
+                        <LivePreview code={code} />
+                    </div>
                 </div>
             </div>
         </div>

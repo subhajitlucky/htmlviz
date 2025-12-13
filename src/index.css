@@ -212,6 +212,73 @@ html:not(.light) .bg-primary.text-white {
 .light .hover\:shadow-\[0_0_30px_rgba\(204\,255\,0\,0\.5\)\]:hover {
     box-shadow: 0 0 30px rgba(37, 99, 235, 0.4) !important;
 }
+
+/* ============================================ */
+/* Light Mode - Live Example / Preview Fixes   */
+/* ============================================ */
+
+/* Fix window header (Preview section) background */
+.light .bg-dark {
+    background-color: #f8fafc !important; /* Slate 50 */
+}
+
+/* Fix code block background for better contrast */
+.light .bg-dark\/50 {
+    background-color: rgba(241, 245, 249, 0.9) !important; /* Slate 100 with high opacity */
+}
+
+/* Fix code syntax highlighting - make it darker for readability */
+.light .text-blue-300 {
+    color: #1e40af !important; /* Blue 800 for better contrast */
+}
+
+/* Fix ring effect for containers */
+.light .ring-white\/5 {
+    ring-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Fix window control dots - make them more visible */
+.light .bg-red-500\/20 {
+    background-color: rgba(239, 68, 68, 0.4) !important;
+}
+
+.light .border-red-500\/50 {
+    border-color: rgba(239, 68, 68, 0.6) !important;
+}
+
+.light .bg-yellow-500\/20 {
+    background-color: rgba(234, 179, 8, 0.4) !important;
+}
+
+.light .border-yellow-500\/50 {
+    border-color: rgba(234, 179, 8, 0.6) !important;
+}
+
+.light .bg-green-500\/20 {
+    background-color: rgba(34, 197, 94, 0.4) !important;
+}
+
+.light .border-green-500\/50 {
+    border-color: rgba(34, 197, 94, 0.6) !important;
+}
+
+/* Fix "Open in Playground" button - better contrast */
+.light .bg-white\/5.hover\:bg-primary {
+    background-color: #e0e7ff !important; /* Indigo 100 for better visibility */
+    color: #2563eb !important; /* Blue 600 */
+    border: 1px solid #c7d2fe !important; /* Indigo 200 */
+}
+
+.light .bg-white\/5.hover\:bg-primary:hover {
+    background-color: #2563eb !important; /* Blue 600 on hover */
+    color: #ffffff !important; /* White text on hover */
+}
+
+/* Ensure hover text becomes dark properly */
+.light .hover\:text-dark:hover {
+    color: #0f172a !important;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
